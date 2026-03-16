@@ -1,6 +1,6 @@
 streamlit
 pandas
-crawl4ai
+crawl4ai==0.3.731
 anthropic
 openpyxl
 playwright
