@@ -1,0 +1,6 @@
+streamlit
+pandas
+crawl4ai
+anthropic
+openpyxl
+playwright
