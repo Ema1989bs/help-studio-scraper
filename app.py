@@ -5,7 +5,16 @@ import anthropic
 import pandas as pd
 import io
 import json
+import os
+import subprocess
+import sys
 
+# Forza l'installazione dei browser se siamo nel cloud
+try:
+    import playwright
+except ImportError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "playwright"])
+    subprocess.check_call([sys.executable, "-m", "playwright", "install", "chromium"])
 # Setup pagina
 st.set_page_config(page_title="Help-Studio Scraper", layout="wide")
 
